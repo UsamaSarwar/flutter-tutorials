@@ -37,9 +37,12 @@ class Portfolio extends StatelessWidget {
                         maxRadius: 80,
                         minRadius: 70,
                         backgroundColor: Colors.grey,
-                        // Image
-                        backgroundImage: NetworkImage(
-                            'https://i0.wp.com/www.usama.dev/wp-content/uploads/2022/03/cropped-UsamaSarwar-1.png'),
+                        /// NetworkImage
+                        // backgroundImage: NetworkImage(
+                        //     'https://i0.wp.com/www.usama.dev/wp-content/uploads/2022/03/cropped-UsamaSarwar-1.png'),
+
+                        /// AssetImage
+                        backgroundImage:  AssetImage('assets/usama.jpg'),
                       ),
                     ),
                   ),

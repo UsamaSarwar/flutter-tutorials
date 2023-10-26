@@ -71,7 +71,13 @@ class _ContactsBookState extends State<ContactsBook> {
                       leading: const CircleAvatar(radius: 30, backgroundImage: AssetImage('assets/usama.jpg')),
                       title: const Text('Usama Sarwar'),
                       subtitle: const Text('0310 0007773'),
-                      trailing: IconButton(onPressed: () {}, icon: const Icon(Icons.call, color: Colors.green)),
+                      trailing: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.video_call, color: Colors.green)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.call, color: Colors.green)),
+                        ],
+                      ),
                     ),
                     ListTile(
                       leading: const CircleAvatar(radius: 30, backgroundImage: NetworkImage('https://picsum.photos/200?random=2')),
